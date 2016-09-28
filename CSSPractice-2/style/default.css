@@ -184,3 +184,55 @@ body {
         }
     /* End of Navigation */
 
+/* Page content */
+#content {
+   float:left;
+   width:960px;
+}
+
+    #content_wrapper {
+    }
+/* End of Page Content */
+
+/* Top Banner */
+    #top_banner {
+        float:left;
+        width:830px;
+        height:250px;
+
+        padding-left:130px;
+        padding-top:10px;
+
+        background-image:url(../images/bg-banner.jpg);
+        background-position:center top;
+        background-repeat:no-repeat;
+    }
+
+    .banner_container {
+        float:left;
+        width:860px;
+        height:250px;
+
+        position:relative;
+        text-align:left;
+    }
+
+        /* image replacement */
+        #prevBtn, #nextBtn {
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            position:absolute;
+            text-indent:-8000px;
+        }
+        /* End of image replacement */
+
+        /* Easy slider */
+        #slider {
+            position:relative;
+            width:830px;
+            overflow:hidden;
+        }
+        /* End of Easy slider */
+/* End of Top Banner */
