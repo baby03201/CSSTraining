@@ -232,7 +232,157 @@ body {
         #slider {
             position:relative;
             width:830px;
+            height: 250px;
             overflow:hidden;
         }
+        
+        #slider ul, #slider li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background: none;
+        }
+        
+        #slider li {
+            /* 
+				define width and height of list item (slide)
+				entire slider area will adjust according to the parameters provided here
+			*/ 
+			width:830px;
+			height:250px;
+			overflow:hidden;
+        }
+        
+        #slider li img{ 
+			border:1px solid #FFF;
+			height:248px; 
+			
+			box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+			-moz-box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+			-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+		}
+		
+		#slider li a{
+			background:none;
+		}
+        
+        #prevBtn, #nextBtn {
+            display: block;
+            width: 65px; /*img width + 15 padding*/
+            height: 40px;
+            position: absolute;
+            left: -65px;
+            top: 185px;
+        }
+        
+        #nextBtn {
+            left: 630px; /*Banner Width*/
+        }
+        
+        #prevBtn a, #nextBtn a {
+            display: block;
+            width: 65px;
+            height: 40px;
+        }
+        
+        #prevBtn a {
+            background: url(../images/btn-prev.png) no-repeat left;
+        }
+        
+        #nextBtn a {
+            background: url(../images/btn-next.png) no-repeat right;
+        }
+        
+        .bubble {
+            position: absolute;
+            float: right;
+            
+            width: 260px;
+            padding-right: 35px;
+            height: 210px;
+            margin-top: -255px;
+            margin-left: 535px;
+            
+            background-image: url(../images/bg-bubble.png);
+            color: #FFF;
+        }
+        
         /* End of Easy slider */
+        
+        /* Post */
+        .featured_post .post_title {
+            height: 29px;
+            padding-top: 18px;
+            
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:  19px;
+            
+            color: #680000;
+        }
+        
+            .featured_post .post_title a {
+                color: #680000;
+                text-decoration: none;
+            }
+            
+            .featured_post .post_title a:hover {
+                color: #FFFFFF;
+            }
+            
+        .featured_post .post_brief {
+            height:67px;
+			padding-left:30px;
+			overflow:hidden;
+			text-align:right;
+			color:#1B1B1B;
+        }
+        
+        .featured_post .post_info{
+			margin-left:30px;
+			text-align:right;
+			padding-top:2px;
+			
+			font-family:Tahoma, Geneva, sans-serif;
+			font-size:10px;
+			color:#969696;
+			
+			border-top:1px solid #FFC000;
+		}
+		
+			.featured_post .post_info a{
+				color:#969696;
+				text-decoration:none;
+			}
+			
+			.featured_post .post_info a:hover{
+				color:#1B1B1B;
+			}
+			
+			.featured_post .post_comments{
+				text-align:center;
+				float:right;
+				margin-top:20px;
+				margin-right:10px;
+				
+				width:65px;
+				height:40px;
+			}
+			
+			.featured_post .post_comments a{
+				color:inherit;
+				text-decoration:none;
+			}
+			
+			.featured_post .post_comments .number{
+				font-family:'KomikaTitleRegular', Arial, Helvetica, sans-serif;
+				font-size:24px;
+				color:#FFF;
+			}
+		
+			.featured_post .post_comments .comments{
+				font-size:14px;
+				color:#F2AA00;
+			}
+        /* End of Post */
 /* End of Top Banner */
